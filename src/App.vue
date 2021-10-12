@@ -1,9 +1,12 @@
 <template>
   <v-app id="app">
-    <div id="menu">
-      <router-link to="/">Home</router-link>
-      <router-link to="/Calendar">Calendar</router-link>
+    <div class="menu">
+      <router-link to="/">■</router-link>
+      <router-link to="/profile">Profile</router-link>
+      <router-link to="/gallery">Gallery</router-link>
+      <router-link to="/blog">Blog</router-link>
     </div>
+    <h1>Home</h1>
       <router-view/>
   </v-app>
 </template>
