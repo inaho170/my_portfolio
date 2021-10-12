@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Calendar from './components/Calendar.vue'
+import Profile from './components/profile.vue'
+import Gallery from './components/gallery.vue'
+import Blog from './components/blog.vue'
 
 // プラグインを使用するためのインストール
 Vue.use(Router)
@@ -15,9 +17,19 @@ export default new Router({
       component: Home
     },
     {
-      path: '/Calendar',
-      name: 'calendar',
-      component: Calendar
+      path: '/profile',
+      name: 'profile',
+      component: Profile
+    },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      component: Gallery
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: Blog
     }
   ]
 })
